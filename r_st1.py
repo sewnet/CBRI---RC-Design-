@@ -29,7 +29,7 @@ if choice == 'About':
 
 if choice == 'Beam':
     st.header ("Beam")
-    st.write ("Enter Details")
+    st.write ("Enter details:")
         
     bly = st.text_input("Longer span (m)", 0)    #helper_text: "(should be in m)"
     #here 0=default value. if you dont enter one then it will show warning on the app page 
@@ -553,7 +553,7 @@ if choice == 'Beam':
 
 elif choice == 'Slab':
     st.header ("Slab")
-    st.write ("Enter Details")
+    st.write ("Enter details:")
         
     ly = st.text_input("Longer span (m)", 0)    #helper_text: "(should be in m)"
     #here 0=default value. if you dont enter one then it will show warning on the app page 
