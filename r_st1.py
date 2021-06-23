@@ -20,7 +20,7 @@ st.image("img_cbrilogo2.png", width = 120)
 if choice == 'About':
     st.header ("About")
     st.write ("This application is developed to design and detail RC beams and slabs using Limit State Design as per Indian Standards (IS 456: 2000 and IS 13920: 2016).") 
-    st.write ("Please select an option, to start designing the respective structural component based on your inputs.")
+    st.write ("Please select an option to start designing the respective structural component based on your inputs.")
     st.write ("** General materials, construction methods and safety shall be followed strictly. All responsibilities rest with the user.")
     
     
@@ -30,16 +30,16 @@ if choice == 'About':
 if choice == 'Beam':
     st.header ("Beam")
     st.write ("Enter Details")
-     
-    bly = st.text_input("Enter longer span", 0)    #helper_text: "(should be in m)"
+        
+    bly = st.text_input("Longer span (m)", 0)    #helper_text: "(should be in m)"
     #here 0=default value. if you dont enter one then it will show warning on the app page 
-    blx = st.text_input("Enter shorter span", 0)   #helper_text: "(should be in m)"
-    ts = st.text_input("Slab thickness", 0)   #helper_text: "(should be in mm)"
-    bfck = st.text_input("Enter concrete grade", 0)  #helper_text: "(should be in MPa)"
-    bfy = st.text_input("Enter steel grade", 0)      #helper_text: "(should be in MPa)"
-    blv_load = st.text_input("Enter live load", 0)   #helper_text: "(should be in kN/m^2)"
-    bfloor_fin = st.text_input("Enter floor finish", 0)   #helper_text: "(should be in kN/m^2)"
-    bdia = st.text_input("Enter assumed rebar diameter (bottom)", 0)  #helper_text: "(should be in mm)"
+    blx = st.text_input("Shorter span (m)", 0)   #helper_text: "(should be in m)"
+    ts = st.text_input("Slab thickness (mm)", 0)   #helper_text: "(should be in mm)"
+    bfck = st.text_input("Concrete grade (MPa)", 0)  #helper_text: "(should be in MPa)"
+    bfy = st.text_input("Steel grade (MPa)", 0)      #helper_text: "(should be in MPa)"
+    blv_load = st.text_input("Live load (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    bfloor_fin = st.text_input("Floor finish (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    bdia = st.text_input("Assumed rebar diameter (bottom) (mm)", 0)  #helper_text: "(should be in mm)"
     
     bbs = st.selectbox ("Thickness of the wall (supported by the beam)", ('230 mm','115 mm','No wall'))   #helper_text: "(should be in mm)" #text: " (supported by the beam)"
     #first condition is the default condition        
@@ -533,7 +533,7 @@ if choice == 'Beam':
         st.write ("NOTES:")
         st.write ("1. Design of beam incorporates effect of all the boundary conditions.")
         st.write ("2. Cover to enforcement is 25mm.")
-        st.write ("3. assume that adequate quality control and safety is obtained in casting and placement of reinforcement.")
+        st.write ("3. Assume that adequate quality control and safety is obtained in casting and placement of reinforcement.")
         st.write ("4. Ductile detailing in beam shall be as per 'IS 13920: 2016'.")
         st.write ("5. Kindly refer to the following figure for typical reinforcement detailing in beams.")
                     
@@ -554,16 +554,16 @@ if choice == 'Beam':
 elif choice == 'Slab':
     st.header ("Slab")
     st.write ("Enter Details")
-      
-    ly = st.text_input("Enter longer span", 0)    #helper_text: "(should be in m)"
+        
+    ly = st.text_input("Longer span (m)", 0)    #helper_text: "(should be in m)"
     #here 0=default value. if you dont enter one then it will show warning on the app page 
-    lx = st.text_input("Enter shorter span", 0)   #helper_text: "(should be in m)"
-    fck = st.text_input("Enter concrete grade", 0)  #helper_text: "(should be in MPa)"
-    fy = st.text_input("Enter steel grade", 0)      #helper_text: "(should be in MPa)"
-    lv_load = st.text_input("Enter live load", 0)   #helper_text: "(should be in kN/m^2)"
-    floor_fin = st.text_input("Enter floor finish", 0)   #helper_text: "(should be in kN/m^2)"
-    dia = st.text_input("Enter assumed rebar diameter (bottom)", 0)  #helper_text: "(should be in mm)"
-    dia2 = st.text_input("Enter assumed rebar diameter (top)", 0)   #helper_text: "(should be in mm)"
+    lx = st.text_input("Shorter span (m)", 0)   #helper_text: "(should be in m)"
+    fck = st.text_input("Concrete grade (MPa)", 0)  #helper_text: "(should be in MPa)"
+    fy = st.text_input("Steel grade (MPa)", 0)      #helper_text: "(should be in MPa)"
+    lv_load = st.text_input("Live load (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    floor_fin = st.text_input("Floor finish (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    dia = st.text_input("Assumed rebar diameter (bottom) (mm)", 0)  #helper_text: "(should be in mm)"
+    dia2 = st.text_input("Assumed rebar diameter (top) (mm)", 0)   #helper_text: "(should be in mm)"
             
     sel = st.selectbox ('Select option',('Interior Panels',
                                                'One Short Edge Discontinuous',
@@ -1187,13 +1187,13 @@ elif choice == 'Slab':
                     
                     st.subheader ("Typical Reinforcement Detailing")
                     st.write ("")
-                    st.image("img_1_way_slab_plan.png", caption= "One-way slab plan", width = 240)
-                    st.image("img_1_way_slab_a.png", caption= "One-way slab section A", width = 240)
-                    st.image("img_1_way_slab_b.png", caption= "One-way slab section B", width = 240)
+                    st.image("img_1_way_slab_plan.png", caption= "One-way slab plan", width = 400)
+                    st.image("img_1_way_slab_a.png", caption= "One-way slab section A", width = 400)
+                    st.image("img_1_way_slab_b.png", caption= "One-way slab section B", width = 400)
                     st.write ("")
                     
                     st.write ("NOTES:")
-                    st.write ("1. Cover to reinforcement: 15")
+                    st.write ("1. Cover to reinforcement is 15mm.")
                     st.write ("2. Assume that adequate quality control and safety is attained in casting and placement of reinforcement.")
                     st.write ("3. Kindly refer to the following figures for typical reinforcement detailing in slabs.")
 
@@ -1220,15 +1220,15 @@ elif choice == 'Slab':
                         
                     st.subheader ("Typical Reinforcement Detailing")
                     st.write ("")
-                    st.image("img_2_way_slab_plan.png", caption= "Two-way slab plan", width = 240)
-                    st.image("img_2_way_slab_sec_c.png", caption= "Two-way slab section C", width = 240)
-                    st.image("img_2_way_slab_sec_d.png", caption= "Two-way slab section D", width = 240)
+                    st.image("img_2_way_slab_plan.png", caption= "Two-way slab plan", width = 400)
+                    st.image("img_2_way_slab_sec_c.png", caption= "Two-way slab section C", width = 400)
+                    st.image("img_2_way_slab_sec_d.png", caption= "Two-way slab section D", width = 400)
                     st.write ("")
                     
                     st.write ("NOTES:")
-                    st.write ("1. Cover to reinforcement: 15")
+                    st.write ("1. Cover to reinforcement is 15mm.")
                     st.write ("2. Assume that adequate quality control and safety is attained in casting and placement of reinforcement.")
-                    st.write ("3. Kindly refer to the following figures for typical reinforcement detailing in slabs.")
+                    st.write ("3. Kindly refer to the above figures for typical reinforcement detailing in slabs.")
 
                         
                     
