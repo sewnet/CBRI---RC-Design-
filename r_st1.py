@@ -31,15 +31,15 @@ if choice == 'Beam':
     st.header ("Beam")
     st.write ("Enter details:")
         
-    bly = st.text_input("Longer span (m)", 0)    #helper_text: "(should be in m)"
+    bly = st.text_input("Longer span of slab supported by beam (m)", 0)    #helper_text: "(should be in m)"
     #here 0=default value. if you dont enter one then it will show warning on the app page 
-    blx = st.text_input("Shorter span (m)", 0)   #helper_text: "(should be in m)"
+    blx = st.text_input("Shorter span of slab supported by beam (m)", 0)   #helper_text: "(should be in m)"
     ts = st.text_input("Slab thickness (mm)", 0)   #helper_text: "(should be in mm)"
     bfck = st.text_input("Concrete grade (MPa)", 0)  #helper_text: "(should be in MPa)"
     bfy = st.text_input("Steel grade (MPa)", 0)      #helper_text: "(should be in MPa)"
-    blv_load = st.text_input("Live load (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
-    bfloor_fin = st.text_input("Floor finish (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
-    bdia = st.text_input("Assumed rebar diameter (bottom) (mm)", 0)  #helper_text: "(should be in mm)"
+    blv_load = st.text_input("Live load on slab supported by beam (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    bfloor_fin = st.text_input("Floor finish on slab supported by beam(kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    bdia = st.text_input("Assumed longitudinal bar diameter (mm)", 0)  #helper_text: "(should be in mm)"
     
     bbs = st.selectbox ("Thickness of the wall (supported by the beam)", ('230 mm','115 mm','No wall'))   #helper_text: "(should be in mm)" #text: " (supported by the beam)"
     #first condition is the default condition        
