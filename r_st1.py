@@ -38,7 +38,7 @@ if choice == 'Beam':
     bfck = st.text_input("Concrete grade (MPa)", 0)  #helper_text: "(should be in MPa)"
     bfy = st.text_input("Steel grade (MPa)", 0)      #helper_text: "(should be in MPa)"
     blv_load = st.text_input("Live load on slab supported by beam (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
-    bfloor_fin = st.text_input("Floor finish on slab supported by beam(kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
+    bfloor_fin = st.text_input("Floor finish on slab supported by beam (kN/m^2)", 0)   #helper_text: "(should be in kN/m^2)"
     bdia = st.text_input("Assumed longitudinal bar diameter (mm)", 0)  #helper_text: "(should be in mm)"
     
     bbs = st.selectbox ("Thickness of the wall (supported by the beam)", ('230 mm','115 mm','No wall'))   #helper_text: "(should be in mm)" #text: " (supported by the beam)"
