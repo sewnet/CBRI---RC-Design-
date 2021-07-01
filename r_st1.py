@@ -517,14 +517,19 @@ if choice == 'Beam':
         n1 = round (n1)
         n2 = 0.5 * n
         n2 = round (n2)
-        # beam_temp1 = int(2*D2)
+        beam_temp1 = int(2*D2)
+    
+        st.write("Provide " + str(bb) + " X " + str(D2) + " mm beam section.") 
+	st.write ("Bottom (Tension) Reinforcement:") 
+        st.write ("Provide" + str(n) + " - " + str(bdia) + " mm at mid-span.")
+        st.write ("Provide" + str(n1) + " - " + str(bdia) + " mm at end-span.")
+        st.write ("Top (Compression) Reinforcement:")   
+        st.write ("Provide" + str(n2) + " - " + str(bdia) + " mm at mid-span.")
+        st.write ("Provide" + str(n) + " - " + str(bdia) + " mm at end-span.")
         
-        st.write ("Bottom Reinforcement:") 
-        st.write (str(n) + " - " + str(bdia) + " dia  (Mid)")
-        st.write (str(n1) + " - " + str(bdia) + " dia  (End)")
-        st.write ("Top Reinforcement:")   
-        st.write (str(n2) + " - " + str(bdia) + " dia  (Mid)")
-        st.write (str(n) + " - " + str(bdia) + " dia  (End)")
+        st.write ("Provide 2 legged 8 mm dia stirrups @ " + str(mins) + " mm c/c at mid-span.")
+        st.write ("Provide 2 legged 8 mm dia stirrups @ " + str(snext) + " mm c/c at end span upto " + str(beam_temp1) + " mm from the column edge.")   
+        st.write ('Provide 25 mm clear cover to the reinforcement.')
         
         st.subheader ("Typical Reinforcement Detailing")   #for figure
         st.image("img_beam_app.png", caption= "Typical Reinforcement Detailing in Beams", width = 500)
@@ -574,7 +579,7 @@ elif choice == 'Slab':
                                                'Three Edges Discontinuous (One Long Edge Continuous)',
                                                'Three Edges Discontinuous (One Short Edge Continuous)',
                                                'Four Edges Discontinuous',
-                                               'None'))   #first condition is the default condition
+                                               'One-Way Slab'))   #first condition is the default condition
             
             # MDDropDownItem:
             #             id: menu1
