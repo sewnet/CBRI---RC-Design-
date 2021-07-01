@@ -519,7 +519,7 @@ if choice == 'Beam':
         n2 = round (n2)
         beam_temp1 = int(2*D2)
     
-        st.write("Provide " + str(bb) + " X " + str(D2) + " mm beam section.") 
+        st.write ("Provide " + str(bb) + " X " + str(D2) + " mm beam section.") 
 	st.write ("Bottom (Tension) Reinforcement:") 
         st.write ("Provide" + str(n) + " - " + str(bdia) + " mm at mid-span.")
         st.write ("Provide" + str(n1) + " - " + str(bdia) + " mm at end-span.")
