@@ -4,6 +4,13 @@ Created on Sun Apr 11 02:50:17 2021
 
 @author: Shweta
 """
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul  1 17:31:49 2021
+
+@author: Shweta
+"""
+
 
 import streamlit as st
 import math
@@ -520,8 +527,8 @@ if choice == 'Beam':
         beam_temp1 = int(2*D2)
     
         st.write ("Provide " + str(bb) + " X " + str(D2) + " mm beam section.") 
-	
-	st.write ("Bottom (Tension) Reinforcement:") 
+        
+        st.write ("Bottom (Tension) Reinforcement:") 
         st.write ("Provide" + str(n) + " - " + str(bdia) + " mm at mid-span.")
         st.write ("Provide" + str(n1) + " - " + str(bdia) + " mm at end-span.")
         st.write ("Top (Compression) Reinforcement:")   
@@ -1249,6 +1256,12 @@ elif choice == 'Slab':
                 pt = float (pt) + 0.01
                 i = i+1
         
+        
+
+            
+    
+ 
+
         
 
             
