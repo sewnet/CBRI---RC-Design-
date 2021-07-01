@@ -1192,9 +1192,9 @@ elif choice == 'Slab':
                     
                     st.subheader ("Typical Reinforcement Detailing")
                     st.write ("")
-                    st.image("img_1_way_slab_plan.png", caption= "One-way slab plan", width = 400)
-                    st.image("img_1_way_slab_a.png", caption= "One-way slab section A", width = 400)
-                    st.image("img_1_way_slab_b.png", caption= "One-way slab section B", width = 400)
+                    st.image("img_1_way_slab_plan.png", width = 400) #caption= "One-way slab plan"
+                    st.image("img_1_way_slab_a.png", width = 400) #caption= "One-way slab section A",
+                    st.image("img_1_way_slab_b.png", width = 400) #caption= "One-way slab section B", 
                     st.write ("")
                     
                     st.write ("NOTES:")
@@ -1204,30 +1204,30 @@ elif choice == 'Slab':
 
                 
                 if float(i_ratio) < 2:      #two-way slab
-                    st.write ("Bottom Reinforcement:")
-                    st.write (str(dia) + " mm dia @ " + str(s_main) + " mm c/c (shorter span)")
-                    st.write (str(dia) + " mm dia @ " + str(sr_dis1) + " mm c/c (longer span)")        
+                    st.write ("Bottom (Tension) Reinforcement:")
+                    st.write (str(dia) + " mm dia @ " + str(s_main) + " mm c/c (Main Reinforcement)")
+                    st.write (str(dia) + " mm dia @ " + str(sr_dis1) + " mm c/c (Distrubution Reinforcement)")        
                 
                     if int(y) == 0 or int(y) == 1 or int(y) == 2 or int(y) == 3 or int(y) == 4 or int(y) == 5 or int(y) == 6 or int(y) == 7:
-                        st.write ("Top Reinforcement:")
-                        st.write (str(dia2) + " mm dia @ " + str(s_main_neg) + " mm c/c (shorter span)")
-                        st.write (str(dia2) + " mm dia @ " + str(sr_dis1_neg) + " mm c/c (longer span)")
+                        st.write ("Top (Compression) Reinforcement:")
+                        st.write (str(dia2) + " mm dia @ " + str(s_main_neg) + " mm c/c (Main Reinforcement)")
+                        st.write (str(dia2) + " mm dia @ " + str(sr_dis1_neg) + " mm c/c (Distrubution Reinforcement)")
                     
                     if int(y) == 8 or int(y) == 9 or int(y) == 12 or int(y) == 13:    
-                        st.write ("Top Reinforcement:")
-                        st.write (str(dia2) + " mm dia @ " + str(s_main_neg) + " mm c/c (shorter span)")
+                        st.write ("Top (Compression) Reinforcement:")
+                        st.write (str(dia2) + " mm dia @ " + str(s_main_neg) + " mm c/c (Main Reinforcement)")
                         #self.root.ids.res113.text =  ""
                     
                     if int(y) == 10 or int(y) == 11 or int(y) == 14 or int(y) == 15:    
-                        st.write ("Top Reinforcement:") 
-                        st.write (str(dia2) + " mm dia @ " + str(sr_dis1_neg) + " mm c/c (longer span)")
+                        st.write ("Top (Compression) Reinforcement:") 
+                        st.write (str(dia2) + " mm dia @ " + str(sr_dis1_neg) + " mm c/c (Distrubution Reinforcement)")
                         #self.root.ids.res113.text =  ""
                         
                     st.subheader ("Typical Reinforcement Detailing")
                     st.write ("")
-                    st.image("img_2_way_slab_plan.png", caption= "Two-way slab plan", width = 400)
-                    st.image("img_2_way_slab_sec_c.png", caption= "Two-way slab section C", width = 400)
-                    st.image("img_2_way_slab_sec_d.png", caption= "Two-way slab section D", width = 400)
+                    st.image("img_2_way_slab_plan.png", width = 400) #caption= "Two-way slab plan", 
+                    st.image("img_2_way_slab_sec_c.png", width = 400) #caption= "Two-way slab section C", 
+                    st.image("img_2_way_slab_sec_d.png", width = 400) #caption= "Two-way slab section D", 
                     st.write ("")
                     
                     st.write ("NOTES:")
