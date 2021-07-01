@@ -534,7 +534,7 @@ if choice == 'Beam':
         st.write ('Provide 25 mm clear cover to the reinforcement.')
         
         st.subheader ("Typical Reinforcement Detailing")   #for figure
-        st.image("img_beam_app.png", caption= "Typical Reinforcement Detailing in Beams", width = 500)
+        st.image("img_beam_app.png", width = 500)  #caption= "Typical Reinforcement Detailing in Beams",
         
         st.write ("")
         st.write ("NOTES:")
@@ -1184,11 +1184,11 @@ elif choice == 'Slab':
                 
                 if float(i_ratio) > 2:        #one-way slab
                     
-                    st.write ("Bottom Reinforcement:")
-                    st.write (str(dia) + " mm dia @ " + str(s_main) + " mm c/c (shorter span)")
-                    st.write (str(dia) + " mm dia @ " + str(sr_dis2) + " mm c/c (longer span)")   
+                    st.write ("Bottom (Tension) Reinforcement:")
+                    st.write (str(dia) + " mm dia @ " + str(s_main) + " mm c/c (Main Reinforcement)")
+                    st.write (str(dia) + " mm dia @ " + str(sr_dis2) + " mm c/c (Distrubution Reinforcement)")   
                 
-                    st.write ("Top Reinforcement:")
+                    st.write ("Top (Compression) Reinforcement:")
                     st.write (str(dia2) + " mm dia @ " + str(sr_dis_top) + " mm c/c (over the supports)")
                     #self.root.ids.res113.text =  ""
                     
