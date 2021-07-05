@@ -523,11 +523,11 @@ if choice == 'Beam':
         st.write ("Provide " + str(bb) + " X " + str(D2) + " mm beam section.") 
         
         st.write ("Bottom (Tension) Reinforcement:") 
-        st.write ("Provide" + str(n) + " - " + str(bdia) + " mm at mid-span.")
-        st.write ("Provide" + str(n1) + " - " + str(bdia) + " mm at end-span.")
+        st.write ("Provide " + str(n) + " - " + str(bdia) + " mm reinforcement at mid-span.")
+        st.write ("Provide " + str(n1) + " - " + str(bdia) + " mm reinforcement at end-span.")
         st.write ("Top (Compression) Reinforcement:")   
-        st.write ("Provide" + str(n2) + " - " + str(bdia) + " mm at mid-span.")
-        st.write ("Provide" + str(n) + " - " + str(bdia) + " mm at end-span.")
+        st.write ("Provide " + str(n2) + " - " + str(bdia) + " mm reinforcement at mid-span.")
+        st.write ("Provide " + str(n) + " - " + str(bdia) + " mm reinforcement at end-span.")
         
         st.write ("Provide 2 legged 8 mm dia stirrups @ " + str(mins) + " mm c/c at mid-span.")
         st.write ("Provide 2 legged 8 mm dia stirrups @ " + str(snext) + " mm c/c at end span upto " + str(beam_temp1) + " mm from the column edge.")   
