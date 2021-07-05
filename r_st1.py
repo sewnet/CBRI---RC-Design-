@@ -575,7 +575,7 @@ elif choice == 'Slab':
     sel = st.selectbox ('Select option',('Interior Panels',
                                                'One Short Edge Discontinuous',
                                                'One Long Edge Discontinuous',
-                                               'Two Adjascent Edges Discontinuous',
+                                               'Two Adjacent Edges Discontinuous',
                                                'Two Short Edges Discontinuous',
                                                'Two Long Edges Discontinuous',
                                                'Three Edges Discontinuous (One Long Edge Continuous)',
@@ -599,7 +599,7 @@ elif choice == 'Slab':
             sel = 3
         if sel == 'One Long Edge Discontinuous':
             sel = 5
-        if sel == 'Two Adjascent Edges Discontinuous':
+        if sel == 'Two Adjacent Edges Discontinuous':
             sel = 7
         if sel == 'Two Short Edges Discontinuous':
             sel = 9
