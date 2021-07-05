@@ -611,7 +611,7 @@ elif choice == 'Slab':
             sel = 15
         if sel == 'Four Edges Discontinuous':
             sel = 17
-        if sel == 'None':
+        if sel == 'One-Way Slab':
             sel = 1
 
         print (sel)                     # do sel = y thing where reqd
